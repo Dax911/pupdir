@@ -6,7 +6,7 @@ import {
   SignedIn,
   SignedOut
 } from '@clerk/nextjs'
-import { trpc } from '../utils/trpc'
+import { api } from '../utils/api'
 import { useRouter } from 'next/router'
 
 const publicPages = ['/', '/sign-in/[[...index]]', '/sign-up/[[...index]]']
@@ -33,4 +33,4 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   )
 }
 
-export default trpc.withTRPC(MyApp)
+export default api.withTRPC(MyApp)

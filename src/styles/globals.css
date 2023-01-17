@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+// Custom styles set background color to red
+body {
+  background-color: red;
+}
